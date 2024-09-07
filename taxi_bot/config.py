@@ -1,0 +1,15 @@
+from environs import Env
+
+env = Env()
+env.read_env()
+
+API_TOKEN_TAXI = env.str("API_TOKEN_TAXI")
+YANDEX_GEOCODER_API_KEY = env.str("YANDEX_GEOCODER_API_KEY")
+API_TOKEN_CLIENT = env.str("API_TOKEN_CLIENT")
+GOOGLE_MAPS_API = env.str("API_GOOGLE_MAPS")
+
+ADMIN_ID = env.str("ADMIN_ID")
+
+
+URL_FOR_DRIVER_BOT = env.str('URL_FOR_DRIVER_BOT')
+URL_FOR_CLIENT_BOT = env.str('URL_FOR_CLIENT_BOT')

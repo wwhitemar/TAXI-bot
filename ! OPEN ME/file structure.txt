@@ -1,0 +1,21 @@
+[ru]
+avatars/ - Аватарки пользователей и водителей
+client_bot/ - Бот для клиентов
+database/ - База Данных
+driver_license_photos/ - Удостоверения водителей
+taxi_bot/ - Бот для водителей
+venv/ - Виртуальное окружение с установленными модулями
+.env - файл для настройки токенов, ссылок и админа
+config.ini - конфиг для подсчетов бонусов и денег
+start.py, start_serv.py, start.bat - запуск бота
+
+[en]
+avatars/ - Avatars of users and drivers
+client_bot/ - Bot for clients
+database/ - Database
+driver_license_photos/ - Driver license
+taxi_bot/ - A bot for drivers
+venv/ is a virtual environment with installed modules
+.env is a file for configuring tokens, links and admin
+config.ini is a config for calculating bonuses and money
+start.py , start_serv.py , start.bat - launch the bot

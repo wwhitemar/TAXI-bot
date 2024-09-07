@@ -1,0 +1,43 @@
+[ru]
+Требуется - Python 3.11 ( Команда для установки на линукс - sudo apt install python3.11 python3.11-pip python3.11-venv )
+После чего заходим в директорию с проектом ( cd название_каталога )
+Активируем виртуальное окружение ( source venv/bin/activate )
+Запуск ( python start.py или start_serv.py )
+Альтернативный запуск с добавлением в фоновый режим  ( nohup python start.py или start_serv.py ) 
+Логи находятся в файле nohup.out в папке откуда запустили
+Чтобы выключить бота:
+'''
+	ps aux | grep bot.py
+	[Пример вывода]
+	"Пользователь"   67104  6.2  0.0  86344 60532 pts/7    S    00:00   0:01 python3.11 taxi_bot/bot.py
+	"Пользователь"   67106  6.3  0.0  85128 59276 pts/7    S    00:00   0:01 python3.11 client_bot/bot.py
+	"Пользователь"   67118  0.0  0.0  24620  2360 pts/7    SN+  00:00   0:00 grep bot.py
+
+	Что идет после "Пользователь" это ID процесса, в нашем случае это 67104 и 67106 ( Последний это наша команда [ps aux | grep bot.py] поэтому его PID нам не нужен)
+	
+	[Дальше убиваем процессы]
+
+	kill 67104 && kill 67106
+'''
+
+[en]
+Required - Python 3.11 ( Linux installation command - sudo apt install python3.11 python3.11-pip python3.11-venv )
+After that, we go to the directory with the project ( cd catalog_name )
+Activating the virtual environment ( source venv/bin/activate )
+Launch ( python start.py or start_serv.py )
+Alternative startup with background mode added ( nohup python start.py or start_serv.py ) 
+The logs are located in the nohup.out file in the folder from where they were launched
+To turn off the bot:
+'''
+	ps aux | grep bot.py
+	[Example output]
+	"User" 67104 6.2 0.0 86344 60532 pts/7 S 00:00 0:01 python3.11 taxi_bot/bot.py
+	"User" 67106 6.3 0.0 85128 59276 pts/7 S 00:00 0:01 python3.11 client_bot/bot.py
+	"User" 67118 0.0 0.0 24620 2360 pts/7 SN+ 00:00 0:00 grep bot.py
+
+	What comes after "User" is the process ID, in our case it is 67104 and 67106 (The latter is our command [ps aux | grep bot.py ] therefore, we do not need its PID)
+
+	[Then we kill the processes]
+
+	kill 67104 && kill 67106
+'''
