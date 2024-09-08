@@ -1,4 +1,4 @@
-#!/home/v/vistep03/taxi/venv/bin/python3.11
+#!/root/mybot.git/taxi_bot/TAXI-bot/venv/bin/python3.11
 # -*- coding: utf-8 -*-
 import re
 import sys
